@@ -17,7 +17,11 @@ const Home = () => {
             </div>
 
             {/* list of college */}
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-5xl mx-auto flex flex-col gap-4">
+                <CollegeCard/>
+                <CollegeCard/>
+                <CollegeCard/>
+                <CollegeCard/>
                 <CollegeCard/>
             </div>
         </div>
