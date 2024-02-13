@@ -5,7 +5,7 @@ import { useTheme } from "./ThemeProvider"
 const Navbar = () => {
     const { theme, setTheme } = useTheme()
     return (
-        <div className="border-b border-gray-600 p-2 text-center text-2xl shadow-md">
+        <div className="border-b borderr-gray-600 p-2 py-3 text-center text-2xl shadow-md">
             <div className="flex max-w-7xl mx-auto">
                 <div className="cursor-pointer flex justify-center items-center">
                     {theme === 'dark' ? (
@@ -22,7 +22,7 @@ const Navbar = () => {
 
                     )}
                 </div>
-                <div className="grow">College Dekho</div>
+                <div className="grow"><span className="bg-orange-600 p-1 rounded-lg shadow-md text-white">College</span> Dekho</div>
                 <div className="cursor-pointer flex justify-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
