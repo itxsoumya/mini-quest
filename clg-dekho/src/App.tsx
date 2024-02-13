@@ -35,25 +35,6 @@ function Main() {
 }
 
 
-function RoughPage() {
-  const { theme, setTheme } = useTheme()
-  return (
-    <div className="grow flex justify-center items-center text-xl flex-col gap-2">
-      This Project is under development :)
-      {theme === 'dark' ? (
-        <Button onClick={() => {
-          setTheme('light')
 
-        }}>Test Light</Button>
-      ) : (
-        <Button onClick={() => {
-          setTheme('dark')
-
-        }}>Test Dark</Button>
-      )}
-
-    </div>
-  )
-}
 
 export default App
