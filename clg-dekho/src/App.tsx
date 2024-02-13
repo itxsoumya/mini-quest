@@ -1,6 +1,6 @@
 
-import { ThemeProvider, useTheme } from "@/components/ThemeProvider"
-import { Button } from "./components/ui/button"
+import { ThemeProvider } from "@/components/ThemeProvider"
+
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 
