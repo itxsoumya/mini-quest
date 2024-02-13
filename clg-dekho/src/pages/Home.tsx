@@ -6,7 +6,8 @@ import { Input } from "@/components/ui/input"
 const Home = () => {
     return (
         <div className="bg-red-100v max-w-7xl mx-auto p-4">
-            <div className="sm:text-6xl text-4xl font-semibold text-center pt-20 underline decoration-pink-500">
+            
+            <div className="sm:text-6xl text-4xl font-semibold text-center sm:pt-20 py-12 underline decoration-pink-500">
                 Not Again. Choose Your College Wisely and Bravely.
             </div>
             {/* search section */}

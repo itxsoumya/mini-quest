@@ -5,7 +5,7 @@ import { useTheme } from "./ThemeProvider"
 const Navbar = () => {
     const { theme, setTheme } = useTheme()
     return (
-        <div className="border-b borderr-gray-600 p-2 py-3 text-center text-2xl shadow-md sticky top-0 backdrop-blur-sm">
+        <div className="border-b borderr-gray-600 p-2 py-3 text-center text-2xl shadow-md sticky top-0 backdrop-blur-sm z-50">
             <div className="flex max-w-7xl mx-auto">
                 <div className="cursor-pointer flex justify-center items-center">
                     {theme === 'dark' ? (
