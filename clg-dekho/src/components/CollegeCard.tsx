@@ -5,7 +5,7 @@ const CollegeCard = ()=>{
 
     let cardHover = ''
     if(theme==='dark'){
-        cardHover='hover:bg-neutral-900'
+        cardHover='hover:bg-[#050e24]'
     }else{
         cardHover='hover:bg-gray-100'
     }

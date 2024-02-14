@@ -1,11 +1,21 @@
 import CollegeCard from "@/components/CollegeCard"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { useEffect, useState } from "react"
 
 
 const Home = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setIsVisible(true);
+      }, 60); 
+  
+      return () => clearTimeout(timer);
+    }, []);
     return (
-        <div className="bg-red-100v max-w-7xl mx-auto p-4">
+        <div className={`bg-red-100v max-w-7xl mx-auto p-4 transition-opacity duration-200 ease-linear ${isVisible ? 'opacity-100' : 'opacity-0'} `}>
             
             <div className="sm:text-6xl text-4xl font-semibold text-center sm:pt-20 py-12 underline decoration-pink-500">
                 Not Again. Choose Your College Wisely and Bravely.
